@@ -46,10 +46,10 @@ const Categories = () => {
   ]
 
   return (
-    <div className="flex justify-around gap-2 xl:gap-6 overflow-x-auto xl:p-4 p-0 mx-3">
+    <div className="flex justify-around gap-2 xl:gap-6 overflow-x-auto xl:p-4 p-0 mx-3 scrollbar-hide categories">
       {category.map((cat, index) => (
-        <div key={index} className="flex flex-col items-center flex-shrink-0 w-24">
-          <div className="relative w-16 xl:w-24 h-16 xl:h-24 rounded-full overflow-hidden border border-1 border-gray-200 shadow-sm">
+        <div key={index} className="flex flex-col items-center flex-shrink-0 w-23">
+          <div className="relative w-16 xl:w-24 h-16 xl:h-24 rounded-full overflow-hidden border-1 border-gray-200 shadow-sm">
             <Image
               src={cat.img}
               alt={cat.title}
@@ -57,7 +57,7 @@ const Categories = () => {
               className="object-cover"
             />
           </div>
-          <p className="mt-2 text-sm text-center">{cat.title}</p>
+          <p className="mt-2 text-sm text-center w-20">{cat.title}</p>
         </div>
       ))}
     </div>

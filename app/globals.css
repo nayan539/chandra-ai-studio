@@ -1,2 +1,8 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
+/* scroll bar of categories */
+
+.categories::-webkit-scrollbar {
+    display: none;
+  }
